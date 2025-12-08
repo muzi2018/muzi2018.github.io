@@ -14,3 +14,7 @@ I received my Master’s degree in Electronic Information from the University of
 You can find my CV here: [Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
 [Email](mailto:XX@stu.pku.edu.cn)
+
+sss
+
+[picture](../assets/bio-photo.jpg)
