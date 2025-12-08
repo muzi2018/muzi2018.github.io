@@ -11,3 +11,4 @@ redirect_from:
 
 I received my Master’s degree in Electronic Information from the University of Chinese Academy of Sciences (Sep 2020 – July 2023). My research focuses on locomotion and manipulation of legged robots, with a particular emphasis on vision-based control strategies. During my studies, I conducted research at the Italian Institute of Technology (IIT), where I explored advanced methods for integrating perception and control in legged robotic systems. My work aims to develop robust, adaptive, and efficient control frameworks that enable legged robots to perform complex tasks in unstructured environments.
 
+[Email](mailto:XX@stu.pku.edu.cn)
