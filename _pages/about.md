@@ -17,4 +17,4 @@ You can find my CV here: [Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
 sss
 
-[picture](../assets/bio-photo.jpg)
+![picture](../assets/bio-photo.jpg)
