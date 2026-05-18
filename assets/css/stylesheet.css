@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+bio {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 1;
+}
+
+papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.4;
+}
+
+name {
+  font-family: serif, 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.hoverZoomLink img {
+  transition: transform 0.2s ease;
+  display: block;
+}
+.hoverZoomLink:hover img {
+  transform: scale(1.04);
+}
