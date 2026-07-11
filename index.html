@@ -168,7 +168,11 @@ layout: null
         <!-- Biped swing arms -->
         <tr>
           <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:28%;vertical-align:middle">
-            <img style="width:100%;max-width:100%;border-radius:4px" src="{{ '/images/500x300.png' | relative_url }}" alt="Biped swing-arm teaser">
+            <video style="width:100%;max-width:100%;border-radius:4px" autoplay loop muted playsinline preload="metadata"
+                   aria-label="Biped robot swing-arm locomotion demo">
+              <source src="{{ '/assets/videos/biped-swing-arms.mp4' | relative_url }}" type="video/mp4">
+              <a href="{{ '/assets/videos/biped-swing-arms.mp4' | relative_url }}">Watch the demo video</a>
+            </video>
           </td>
           <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:72%;vertical-align:middle">
             <papertitle>Highly Dynamic Locomotion Control of Biped Robot with Swing Arms</papertitle>
