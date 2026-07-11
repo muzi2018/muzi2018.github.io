@@ -23,7 +23,7 @@ repository               : "muzi2018/muzi2018.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "weijie-wang.jpg"
   name             : "Weijie Wang"
   pronouns         : # example: "she/her"  
   bio              : "Robotics researcher — humanoid & legged-robot locomotion, loco-manipulation, and VLM/LLM-grounded control."
