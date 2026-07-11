@@ -7,6 +7,7 @@ layout: null
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Weijie Wang</title>
   <meta name="author" content="Weijie Wang">
+  <meta name="description" content="Weijie Wang is a robotics researcher working on humanoid and legged-robot locomotion, loco-manipulation, and VLM/LLM-grounded control and planning.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="{{ '/assets/css/stylesheet.css' | relative_url }}">
   <link rel="icon" type="image/png" href="{{ '/images/favicon-192x192.png' | relative_url }}">
@@ -18,34 +19,39 @@ layout: null
   <tr style="padding:0">
     <td style="padding:0">
 
+      <!-- ============================ HEADER ============================ -->
       <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
         <tr style="padding:0">
-          <td style="padding:2.5%;width:63%;vertical-align:middle">
+          <td class="responsive-cell" style="padding:2.5%;width:63%;vertical-align:middle">
             <p style="text-align:center;font-family:serif,'Lato',Verdana,Helvetica,sans-serif;font-size:30px;line-height:0.5;margin-bottom:45px">
               <name>Weijie Wang</name>
             </p>
             <p>
-              I received my Master's degree in Electronic Information from the
-              <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences</a>
-              (Sep 2020 &ndash; July 2023). My research focuses on locomotion and manipulation
-              of legged robots, with a particular emphasis on vision-based control strategies.
+              I am a robotics researcher working on <b>humanoid and legged-robot locomotion,
+              loco-manipulation, and learning-based control and planning</b>. I am especially
+              interested in grounding <b>vision&ndash;language models (VLMs)</b> and
+              <b>large language models (LLMs)</b> into embodied decision-making, so that robots
+              can act adaptively in unstructured, real-world environments.
             </p>
             <p>
-              During my studies, I conducted research at the
-              <a href="https://www.iit.it/">Italian Institute of Technology (IIT)</a>,
-              where I explored advanced methods for integrating perception and control in
-              legged robotic systems. My work aims to develop robust, adaptive, and efficient
-              control frameworks that enable legged robots to perform complex tasks in
-              unstructured environments.
+              From Nov 2023 to Nov 2025 I was a Researcher at the
+              <a href="https://www.iit.it/">Italian Institute of Technology (IIT)</a>
+              in Genoa, Italy, where I worked on autonomous whole-body loco-manipulation and
+              VLM-grounded motion intention. I received my M.S. in Electronic Information from the
+              <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences (UCAS)</a>,
+              carrying out research at the
+              <a href="http://english.ia.cas.cn/">Institute of Automation, CAS</a>
+              on highly dynamic biped locomotion and safe motion planning.
             </p>
             <p style="text-align:center">
               <a href="mailto:duangsir518@gmail.com">Email</a> &nbsp;/&nbsp;
               <a href="{{ '/assets/Curriculum_Vitae.pdf' | relative_url }}">CV</a> &nbsp;/&nbsp;
-              <a href="https://github.com/muzi2018">Github</a>
+              <a href="https://github.com/muzi2018">GitHub</a>
             </p>
           </td>
-          <td style="padding:2.5%;width:40%;max-width:40%">
+          <td class="responsive-cell" style="padding:2.5%;width:40%;max-width:40%">
+            <!-- TODO: replace images/bio-photo.jpg with a real profile photo -->
             <a href="{{ '/images/bio-photo.jpg' | relative_url }}">
               <img style="width:100%;max-width:100%;border-radius:6px;" alt="profile photo"
                    src="{{ '/images/bio-photo.jpg' | relative_url }}" class="hoverZoomLink">
@@ -55,89 +61,187 @@ layout: null
         </tbody>
       </table>
 
-      <div class="section">
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tbody>
-            <tr>
-              <td style="padding-bottom:5px;padding-top:20px">
-                <heading>News</heading>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- ============================ NEWS ============================ -->
+      <div class="section news">
+        <heading class="section-heading" style="display:block">News</heading>
         <ul>
-          <li>[2025/05] Updated personal website.</li>
+          <li><span class="date">[2025/11]</span> Completed my research appointment at the Italian Institute of Technology (IIT).</li>
+          <li><span class="date">[2025/08]</span> Our paper <b>INTENTION</b> (humanoid motion intention via a grounded VLM) is out on arXiv and accepted to <b>Humanoids 2025</b>.</li>
+          <li><span class="date">[2024/09]</span> <b>HYPERmotion</b> was accepted to the <b>Conference on Robot Learning (CoRL) 2024</b>.</li>
+          <li><span class="date">[2023/11]</span> Joined IIT (Genoa, Italy) as a Researcher.</li>
+          <li><span class="date">[2023/07]</span> Received my M.S. degree from the University of Chinese Academy of Sciences.</li>
         </ul>
       </div>
 
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody>
-        <tr>
-          <td style="padding-bottom:5px;padding-top:20px">
-            <heading>Publications</heading>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+      <!-- ============================ PUBLICATIONS ============================ -->
+      <heading class="section-heading" style="display:block;margin-top:28px">Publications</heading>
+      <p class="muted" style="font-size:14px;margin:4px 0 0 0">Author name shown in <b>bold</b>.</p>
 
       <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
+
+        <!-- INTENTION -->
         <tr>
-          <td style="padding:20px;padding-bottom:30px;width:28%;vertical-align:middle">
-            <img style="width:100%;max-width:100%" src="{{ '/images/500x300.png' | relative_url }}" alt="">
+          <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:28%;vertical-align:middle">
+            <img style="width:100%;max-width:100%;border-radius:4px" src="{{ '/images/500x300.png' | relative_url }}" alt="INTENTION teaser">
           </td>
-          <td style="padding:20px;padding-bottom:30px;width:72%;vertical-align:middle">
-            <papertitle>Your Paper Title Here</papertitle>
+          <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:72%;vertical-align:middle">
+            <papertitle>INTENTION: Inferring Tendencies of Humanoid Robot Motion Through Interactive Intuition and Grounded VLM</papertitle>
             <br>
-            <b>Weijie Wang</b>, Co-Author One, Co-Author Two
+            Jin Wang, <b>Weijie Wang</b>, Boyuan Deng, Heng Zhang, Rui Dai, Nikos Tsagarakis
             <br>
-            <em>Venue Name</em>, Year
+            <em>IEEE-RAS International Conference on Humanoid Robots (Humanoids)</em>, 2025
             <br>
-            <a href="#">arXiv</a> / <a href="#">project page</a> / <a href="#">code</a>
+            <a href="https://arxiv.org/abs/2508.04931">arXiv</a> /
+            <a href="https://robo-intention.github.io">project page</a> /
+            <a href="https://ieeexplore.ieee.org/document/11203117/">IEEE</a>
             <p style="margin-bottom:10px;margin-top:10px">
-              Short description of the contribution goes here.
+              A framework that gives robots interactive intuition for autonomous manipulation by
+              coupling VLM-based scene reasoning with an interaction-driven <b>Memory Graph</b> and an
+              <b>Intuitive Perceptor</b> that extracts physical relations and affordances&mdash;letting
+              robots infer suitable behaviors in novel scenes without repeated instructions.
             </p>
           </td>
         </tr>
-        </tbody>
-      </table>
 
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody>
+        <!-- HYPERmotion -->
         <tr>
-          <td style="padding-bottom:5px;padding-top:20px">
-            <heading>Experience &amp; Education</heading>
+          <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:28%;vertical-align:middle">
+            <img style="width:100%;max-width:100%;border-radius:4px" src="{{ '/images/500x300.png' | relative_url }}" alt="HYPERmotion teaser">
+          </td>
+          <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:72%;vertical-align:middle">
+            <papertitle>HYPERmotion: Learning Hybrid Behavior Planning for Autonomous Loco-manipulation</papertitle>
+            <br>
+            Jin Wang, Rui Dai, <b>Weijie Wang</b>, Luca Rossini, Francesco Ruscelli, Nikos Tsagarakis
+            <br>
+            <em>Conference on Robot Learning (CoRL)</em>, 2024
+            <br>
+            <a href="https://arxiv.org/abs/2406.14655">arXiv</a> /
+            <a href="https://hy-motion.github.io/">project page</a> /
+            <a href="https://proceedings.mlr.press/v270/wang25f.html">proceedings</a>
+            <p style="margin-bottom:10px;margin-top:10px">
+              A framework that learns, selects and plans whole-body behaviors across scenarios. It
+              combines reinforcement learning with whole-body optimization over <b>38 actuated joints</b>,
+              stores skills in a motion library, and uses LLMs to build a hierarchical task graph while a
+              VLM grounds perception into a morphology selector for single/dual-arm and legged/wheeled locomotion.
+            </p>
           </td>
         </tr>
+
+        <!-- Biped swing arms -->
+        <tr>
+          <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:28%;vertical-align:middle">
+            <img style="width:100%;max-width:100%;border-radius:4px" src="{{ '/images/500x300.png' | relative_url }}" alt="Biped swing-arm teaser">
+          </td>
+          <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:72%;vertical-align:middle">
+            <papertitle>Highly Dynamic Locomotion Control of Biped Robot with Swing Arms</papertitle>
+            <br>
+            <b>Weijie Wang</b>, Song Liu, Qinfeng Shan, Lihao Jia
+            <br>
+            <em>IEEE International Conference on Advanced Robotics and Mechatronics (ICARM)</em>, 2023
+            <br>
+            <a href="https://arxiv.org/abs/2208.08120">arXiv</a> /
+            <a href="https://ieeexplore.ieee.org/document/10218975/">IEEE</a>
+            <p style="margin-bottom:10px;margin-top:10px">
+              A control strategy that integrates swing arms into the full jumping pipeline&mdash;modeling,
+              trajectory planning and tracking&mdash;by modeling the biped as a Flywheel Dynamics Spring
+              Model and realizing it with a whole-body controller. On the Purple V1.0 robot, swing arms
+              improved agility, roughly halved stabilization time, and reduced energy consumption.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Crowd navigation -->
+        <tr>
+          <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:28%;vertical-align:middle">
+            <img style="width:100%;max-width:100%;border-radius:4px" src="{{ '/images/500x300.png' | relative_url }}" alt="Crowd navigation teaser">
+          </td>
+          <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:72%;vertical-align:middle">
+            <papertitle>Improving the Ability of Robots to Navigate Through Crowded Environments Safely using Deep Reinforcement Learning</papertitle>
+            <br>
+            <b>Weijie Wang</b>, et al.
+            <br>
+            <em>IEEE International Conference on Advanced Robotics and Mechatronics (ICARM)</em>, 2022
+            <br>
+            <a href="https://ieeexplore.ieee.org/document/9959459/">IEEE</a>
+            <p style="margin-bottom:10px;margin-top:10px">
+              A safe and efficient motion-planning method that pairs a forward-reachable-set formulation
+              (offline) with deep reinforcement learning (online decision-making), raising the success rate
+              of passing through crowded, narrow environments compared with reachability-only baselines.
+            </p>
+          </td>
+        </tr>
+
         </tbody>
       </table>
 
-      <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-        <tr>
-          <td style="padding:20px;width:15%;vertical-align:middle;text-align:center">
-            <img style="width:80px;max-width:80px" src="{{ '/images/500x300.png' | relative_url }}" alt="IIT">
-          </td>
-          <td style="padding:20px;width:85%;vertical-align:middle">
+      <!-- ============================ EXPERIENCE & EDUCATION ============================ -->
+      <heading class="section-heading" style="display:block;margin-top:28px">Experience &amp; Education</heading>
+
+      <div style="padding:6px 2.5% 0 2.5%">
+        <div class="cv-row">
+          <div class="cv-left">
             <b>Italian Institute of Technology (IIT)</b><br>
-            Visiting Researcher &mdash; Legged robotics, perception and control<br>
-            <span style="color:#666">Genoa, Italy</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:20px;width:15%;vertical-align:middle;text-align:center">
-            <img style="width:80px;max-width:80px" src="{{ '/images/500x300.png' | relative_url }}" alt="UCAS">
-          </td>
-          <td style="padding:20px;width:85%;vertical-align:middle">
-            <b>University of Chinese Academy of Sciences</b><br>
-            M.S. in Electronic Information<br>
-            <span style="color:#666">Sep 2020 &ndash; July 2023</span>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+            Researcher &mdash; humanoid loco-manipulation, VLM/LLM-grounded planning<br>
+            <span class="muted">Genoa, Italy</span>
+          </div>
+          <div class="cv-right">Nov 2023 &ndash; Nov 2025</div>
+        </div>
 
-      <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <div class="cv-row">
+          <div class="cv-left">
+            <b>University of Chinese Academy of Sciences (UCAS)</b><br>
+            M.S. in Electronic Information &mdash; research at the Institute of Automation, CAS<br>
+            <span class="muted">Beijing, China</span>
+          </div>
+          <div class="cv-right">Sep 2020 &ndash; Jul 2023</div>
+        </div>
+
+        <div class="cv-row">
+          <div class="cv-left">
+            <b>Henan University of Technology</b><br>
+            B.Eng. in Automation<br>
+            <span class="muted">Henan, China</span>
+          </div>
+          <div class="cv-right">Sep 2015 &ndash; Jun 2019</div>
+        </div>
+      </div>
+
+      <!-- ============================ AWARDS ============================ -->
+      <heading class="section-heading" style="display:block;margin-top:28px">Awards &amp; Honors</heading>
+
+      <div style="padding:6px 2.5% 0 2.5%">
+        <div class="cv-row">
+          <div class="cv-left"><b>Merit Student</b><br><span class="muted">University of Chinese Academy of Sciences</span></div>
+          <div class="cv-right">2020 &ndash; 2021</div>
+        </div>
+        <div class="cv-row">
+          <div class="cv-left"><b>National Encouragement Scholarship</b><br><span class="muted">Henan University of Technology</span></div>
+          <div class="cv-right">2017 &ndash; 2018</div>
+        </div>
+        <div class="cv-row">
+          <div class="cv-left"><b>National Encouragement Scholarship</b><br><span class="muted">Henan University of Technology</span></div>
+          <div class="cv-right">2016 &ndash; 2017</div>
+        </div>
+      </div>
+
+      <!-- ============================ SKILLS ============================ -->
+      <heading class="section-heading" style="display:block;margin-top:28px">Skills</heading>
+
+      <div style="padding:10px 2.5% 0 2.5%">
+        <p style="margin:0 0 6px 0"><b>Programming</b><br>
+          <span class="pill">C++</span><span class="pill">Python</span><span class="pill">MATLAB</span><span class="pill">Linux</span>
+        </p>
+        <p style="margin:14px 0 6px 0"><b>Robotics &amp; Tooling</b><br>
+          <span class="pill">ROS</span><span class="pill">Embedded Systems</span><span class="pill">Drake</span><span class="pill">Pinocchio</span><span class="pill">Isaac Lab</span>
+        </p>
+        <p style="margin:14px 0 6px 0"><b>Languages</b><br>
+          <span class="pill">Chinese (native)</span><span class="pill">English (IELTS 6.0)</span>
+        </p>
+      </div>
+
+      <!-- ============================ FOOTER ============================ -->
+      <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:24px">
         <tbody>
         <tr>
           <td style="padding:0 2.5% 20px 2.5%;text-align:right;font-size:12px;color:#aaa">
