@@ -113,7 +113,11 @@ layout: null
         <!-- INTENTION -->
         <tr>
           <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:28%;vertical-align:middle">
-            <img style="width:100%;max-width:100%;border-radius:4px" src="{{ '/images/500x300.png' | relative_url }}" alt="INTENTION teaser">
+            <video style="width:100%;max-width:100%;border-radius:4px" autoplay loop muted playsinline preload="metadata"
+                   aria-label="INTENTION task demo">
+              <source src="{{ '/assets/videos/intention.mp4' | relative_url }}" type="video/mp4">
+              <a href="{{ '/assets/videos/intention.mp4' | relative_url }}">Watch the demo video</a>
+            </video>
           </td>
           <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:72%;vertical-align:middle">
             <papertitle>INTENTION: Inferring Tendencies of Humanoid Robot Motion Through Interactive Intuition and Grounded VLM</papertitle>
