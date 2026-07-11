@@ -79,10 +79,15 @@ layout: null
         <tbody>
         <tr>
           <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:28%;vertical-align:middle;text-align:center">
-            <img style="max-width:100%;max-height:340px;border-radius:4px" src="{{ '/images/humanoid-odm.png' | relative_url }}" alt="General-purpose humanoid robot platform — bimanual dexterous manipulation">
+            <video style="max-width:100%;max-height:340px;border-radius:4px" autoplay loop muted playsinline
+                   poster="{{ '/images/humanoid-odm.png' | relative_url }}"
+                   aria-label="General-purpose humanoid robot platform — bimanual dexterous manipulation demo">
+              <source src="{{ '/assets/videos/humanoid-odm.mp4' | relative_url }}" type="video/mp4">
+              <a href="{{ '/assets/videos/humanoid-odm.mp4' | relative_url }}">Watch the demo video</a>
+            </video>
           </td>
           <td class="responsive-cell" style="padding:20px;padding-bottom:30px;width:72%;vertical-align:middle">
-            <papertitle>General-Purpose Humanoid Robot Platform (ODM)</papertitle>
+            <papertitle>General-Purpose Humanoid Robot Platform</papertitle>
             <br>
             <span class="muted">Geometry Dynamics Co., Ltd. &middot; Whole-body motion control &amp; dynamic loco-manipulation</span>
             <p style="margin-bottom:10px;margin-top:10px">
