@@ -1,0 +1,39 @@
+---
+layout: null
+---
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>{{ page.title }} - Weijie Wang</title>
+  <meta name="author" content="Weijie Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/stylesheet.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/images/favicon-192x192.png' | relative_url }}">
+</head>
+
+<body>
+<table style="width:100%;max-width:780px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;padding:24px 2.5% 60px 2.5%;">
+  <tbody>
+  <tr>
+    <td>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #eee;padding-bottom:12px;margin-bottom:20px;">
+        <a href="{{ '/blog.html' | relative_url }}">&larr; Log</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </div>
+
+      <div class="log-entry" style="border-bottom:none;padding-top:4px;">
+        <div class="log-header">
+          <span class="log-date">[{{ page.date | date: "%Y-%m-%d" }}]</span>
+          <span class="log-title">{{ page.title }}</span>
+        </div>
+        <div class="log-body">
+          {{ content }}
+        </div>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

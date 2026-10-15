@@ -116,6 +116,54 @@ span.highlight {
   line-height: 1.3;
 }
 
+/* --- Minimalist Log / Blog styles --- */
+.log-entry {
+  padding: 18px 0;
+  border-bottom: 1px dashed #eaeaea;
+}
+.log-entry:last-child {
+  border-bottom: none;
+}
+.log-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.log-date {
+  color: #f09228;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.log-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+.log-body p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+.log-body pre,
+.log-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+  background: #f6f8fa;
+  border-radius: 4px;
+}
+.log-body code {
+  padding: 2px 5px;
+}
+.log-body pre {
+  padding: 12px;
+  overflow-x: auto;
+}
+.log-body pre code {
+  padding: 0;
+  background: none;
+}
+
 /* --- Responsive: stack the two-column header and paper rows on narrow screens --- */
 @media (max-width: 640px) {
   .responsive-cell {
