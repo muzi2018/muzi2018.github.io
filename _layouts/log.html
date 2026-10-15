@@ -5,32 +5,41 @@
   <title>{{ page.title }} - Weijie Wang</title>
   <meta name="author" content="Weijie Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ '/assets/css/stylesheet.css' | relative_url }}">
   <link rel="icon" type="image/png" href="{{ '/images/favicon-192x192.png' | relative_url }}">
 </head>
 
-<body>
-<table style="width:100%;max-width:780px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;padding:24px 2.5% 60px 2.5%;">
-  <tbody>
-  <tr>
-    <td>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #eee;padding-bottom:12px;margin-bottom:20px;">
-        <a href="{{ '/blog.html' | relative_url }}">&larr; Log</a>
-        <a href="{{ '/' | relative_url }}">Home</a>
-      </div>
+<body class="log-page">
+  <header class="log-hero">
+    <div class="log-hero-inner">
+      <h1><a href="{{ '/blog.html' | relative_url }}">Blog</a></h1>
+      <a class="log-home" href="{{ '/' | relative_url }}">&larr; Home</a>
+    </div>
+  </header>
 
-      <div class="log-entry" style="border-bottom:none;padding-top:4px;">
-        <div class="log-header">
-          <span class="log-date">[{{ page.date | date: "%Y-%m-%d" }}]</span>
-          <span class="log-title">{{ page.title }}</span>
+  <div class="log-stage">
+    <div class="log-stream">
+      <section class="log-year-group">
+        <h2 class="log-year">{{ page.date | date: "%Y" }}</h2>
+        <div class="log-item">
+          <div class="log-rail" aria-hidden="true"><span class="log-dot"></span></div>
+          <article class="log-card log-card-static">
+            <div class="log-toggle">
+              <time class="log-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time>
+              <span class="log-title-row">
+                <span class="log-title">{{ page.title }}</span>
+              </span>
+            </div>
+            <div class="log-body">
+              {{ content }}
+            </div>
+          </article>
         </div>
-        <div class="log-body">
-          {{ content }}
-        </div>
-      </div>
-    </td>
-  </tr>
-  </tbody>
-</table>
+      </section>
+    </div>
+  </div>
 </body>
 </html>

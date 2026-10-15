@@ -6,38 +6,76 @@ permalink: /blog.html
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Log - Weijie Wang</title>
+  <title>Blog - Weijie Wang</title>
   <meta name="author" content="Weijie Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ '/assets/css/stylesheet.css' | relative_url }}">
   <link rel="icon" type="image/png" href="{{ '/images/favicon-192x192.png' | relative_url }}">
 </head>
 
-<body>
-<table style="width:100%;max-width:780px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;padding:24px 2.5% 60px 2.5%;">
-  <tbody>
-  <tr>
-    <td>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #eee;padding-bottom:12px;margin-bottom:16px;">
-        <heading style="font-size:24px;font-weight:700;">Log</heading>
-        <a href="{{ '/' | relative_url }}">&larr; Home</a>
-      </div>
+<body class="log-page">
+  <header class="log-hero">
+    <div class="log-hero-inner">
+      <h1>Blog</h1>
+      <a class="log-home" href="{{ '/' | relative_url }}">&larr; Home</a>
+    </div>
+  </header>
 
+  <div class="log-stage">
+    <div class="log-stream">
+      {% assign shown_year = "" %}
       {% for post in site.posts %}
-      <div class="log-entry">
-        <div class="log-header">
-          <span class="log-date">[{{ post.date | date: "%Y-%m-%d" }}]</span>
-          <a class="log-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% assign post_year = post.date | date: "%Y" %}
+        {% if post_year != shown_year %}
+          {% if shown_year != "" %}
+            </section>
+          {% endif %}
+          <section class="log-year-group">
+            <h2 class="log-year">{{ post_year }}</h2>
+          {% assign shown_year = post_year %}
+        {% endif %}
+        <div class="log-item">
+          <div class="log-rail" aria-hidden="true"><span class="log-dot"></span></div>
+          <article class="log-card">
+            <details id="{{ post.url | remove: '/' }}">
+              <summary class="log-toggle">
+                <time class="log-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %d, %Y" }}</time>
+                <span class="log-title-row">
+                  <span class="log-title">{{ post.title }}</span>
+                  <svg class="log-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </summary>
+              <div class="log-panel">
+                <div class="log-body">
+                  {{ post.content }}
+                </div>
+              </div>
+            </details>
+          </article>
         </div>
-        <div class="log-body">
-          {{ post.content }}
-        </div>
-      </div>
       {% endfor %}
+      {% if shown_year != "" %}
+        </section>
+      {% endif %}
+    </div>
+  </div>
 
-    </td>
-  </tr>
-  </tbody>
-</table>
+  <script>
+    (function () {
+      function openFromHash() {
+        var id = location.hash.replace(/^#/, "");
+        if (!id) return;
+        var el = document.getElementById(id);
+        if (el && el.tagName === "DETAILS") el.open = true;
+      }
+      openFromHash();
+      window.addEventListener("hashchange", openFromHash);
+    })();
+  </script>
 </body>
 </html>
