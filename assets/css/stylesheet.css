@@ -336,6 +336,28 @@ details[open] .log-chevron {
   margin: 0 0 14px;
   padding-left: 1.25rem;
 }
+.log-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 18px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  display: block;
+  overflow-x: auto;
+}
+.log-body th,
+.log-body td {
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.log-body th {
+  background: #f9fafb;
+  color: #111111;
+  font-weight: 600;
+  white-space: nowrap;
+}
 .log-body img {
   max-width: 100%;
   height: auto;
